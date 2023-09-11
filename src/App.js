@@ -45,7 +45,7 @@ const App = () => {
     ele.innerHTML = "";
     const pr = document.createElement("p");
     if (data.name) {
-      pr.innerText = `: ${data._id}, Name :${data.name}, Subscribed-Channel :${data.subscribedChannel}, Subscribed-Date:${data.subscribedDate}`;
+      pr.innerText = `UserID : ${data._id}, Name :${data.name}, Subscribed-Channel :${data.subscribedChannel}, Subscribed-Date:${data.subscribedDate}`;
     } else {
       pr.innerText = data.message;
     }
