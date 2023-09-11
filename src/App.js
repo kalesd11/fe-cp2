@@ -13,7 +13,7 @@ const App = () => {
 
     for (let i = 0; i < data.length; i++) {
       const pr = document.createElement("p");
-      pr.innerText = `Name :${data[i].name}, Subscribed-Channel :${data[i].subscribedChannel}, Subscribed-Date : ${data[i].subscribedDate}`;
+      pr.innerText = `UserID : ${data[i]._id}, Name :${data[i].name}, Subscribed-Channel :${data[i].subscribedChannel}, Subscribed-Date : ${data[i].subscribedDate}`;
       ele.appendChild(pr);
     }
   };
@@ -45,7 +45,7 @@ const App = () => {
     ele.innerHTML = "";
     const pr = document.createElement("p");
     if (data.name) {
-      pr.innerText = `Name :${data.name}, Subscribed-Channel :${data.subscribedChannel}, Subscribed-Date:${data.subscribedDate}`;
+      pr.innerText = `UserID : ${data._id}, Name :${data.name}, Subscribed-Channel :${data.subscribedChannel}, Subscribed-Date:${data.subscribedDate}`;
     } else {
       pr.innerText = data.message;
     }
